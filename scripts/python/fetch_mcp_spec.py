@@ -1,8 +1,4 @@
-"""Utility for cloning or refreshing the upstream MCP specification.
-
-The script wraps `git` so that Python and automation tooling can keep the
-`external/mcp-spec` folder up to date without manually running Git commands.
-"""
+"""Utility for cloning or refreshing the upstream MCP specification."""
 
 from __future__ import annotations
 
@@ -20,7 +16,11 @@ def run(command: Sequence[str], *, cwd: Path | None = None) -> None:
     completed = subprocess.run(command, cwd=cwd, check=False, text=True)
     if completed.returncode != 0:
         location = f" in {cwd}" if cwd else ""
-        raise RuntimeError(f"Command {' '.join(command)} failed{location} with exit code {completed.returncode}")
+        message = (
+            f"Command {' '.join(command)} failed{location} "
+            f"with exit code {completed.returncode}"
+        )
+        raise RuntimeError(message)
 
 
 def clone_or_update(repo: str, destination: Path) -> None:
@@ -40,17 +40,23 @@ def checkout(destination: Path, reference: str | None) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Sync the upstream MCP specification repository")
-    parser.add_argument("--repo", default=DEFAULT_REPO, help="Git repository URL for the specification")
+    parser = argparse.ArgumentParser(
+        description="Sync the upstream MCP specification repository.",
+    )
+    parser.add_argument(
+        "--repo",
+        default=DEFAULT_REPO,
+        help="Git repository URL for the specification.",
+    )
     parser.add_argument(
         "--dest",
         default=str(DEFAULT_DEST),
-        help="Destination path relative to the project root",
+        help="Destination path relative to the project root.",
     )
     parser.add_argument(
         "--ref",
         default=None,
-        help="Optional git reference (branch, tag, or commit) to check out after syncing",
+        help="Optional git reference (branch, tag, or commit) to check out after syncing.",
     )
     return parser.parse_args()
 
