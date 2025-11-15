@@ -11,7 +11,7 @@ import subprocess
 from pathlib import Path
 from typing import Sequence
 
-DEFAULT_REPO = "https://github.com/modelcontextprotocol/spec.git"
+DEFAULT_REPO = "https://github.com/modelcontextprotocol/modelcontextprotocol.git"
 DEFAULT_DEST = Path("external/mcp-spec")
 
 

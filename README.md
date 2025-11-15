@@ -43,10 +43,12 @@ Use the prompt template in `docs/templates/prompt-template.md` to track inputs t
 
 You have a few options depending on workflow:
 
+The published specification is versioned at https://modelcontextprotocol.io/specification, with the latest release linked on the Versioning page.
+
 - **Git submodule**: Add the upstream specification as `external/mcp-spec`.
 
    ```bash
-   git submodule add https://github.com/modelcontextprotocol/spec external/mcp-spec
+   git submodule add https://github.com/modelcontextprotocol/modelcontextprotocol external/mcp-spec
    ```
 
    Update with `git submodule update --remote`. Summaries or diffs belong in `docs/spec/`.

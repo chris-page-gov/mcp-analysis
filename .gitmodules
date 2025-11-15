@@ -1,0 +1,3 @@
+[submodule "external/mcp-spec"]
+	path = external/mcp-spec
+	url = https://github.com/modelcontextprotocol/modelcontextprotocol

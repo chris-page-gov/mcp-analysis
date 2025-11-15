@@ -6,8 +6,8 @@ export interface McpSpecReference {
 
 const coreSpec: McpSpecReference = {
   title: 'Model Context Protocol Specification',
-  url: 'https://modelcontextprotocol.io/spec',
-  summary: 'Authoritative source for the evolving MCP standard.'
+  url: 'https://modelcontextprotocol.io/specification',
+  summary: 'Mintlify-hosted portal for the current and historical MCP protocol versions.',
 };
 
 export function getCoreSpecification(): McpSpecReference {
