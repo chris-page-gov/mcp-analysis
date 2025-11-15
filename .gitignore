@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.uv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+
+# Node / TypeScript
+node_modules/
+dist/
+.eslintcache
+
+# Documentation tooling
+site/
+
+# Editor
+.vscode/*.log
+.vscode/.ropeproject
+.idea/
+*.code-workspace
+.DS_Store
+
+# Temporary files
+*.swp
+*.swo
+~$*.docx

@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "lint:python",
+            "type": "shell",
+            "command": "uv",
+            "args": [
+                "run",
+                "ruff",
+                "check",
+                "."
+            ],
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "typecheck:python",
+            "type": "shell",
+            "command": "uv",
+            "args": [
+                "run",
+                "mypy",
+                "scripts/python"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "lint:typescript",
+            "type": "shell",
+            "command": "pnpm",
+            "args": [
+                "lint"
+            ],
+            "group": "build",
+            "problemMatcher": ["$eslint-stylish"]
+        },
+        {
+            "label": "typecheck:typescript",
+            "type": "shell",
+            "command": "pnpm",
+            "args": [
+                "typecheck"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "mcp-analysis",
+  "version": "0.1.0",
+  "description": "Tooling to support MCP specification research and documentation.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint \"scripts/typescript/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --project tsconfig.json",
+    "format": "prettier --check \"**/*.{ts,tsx,js,json,md}\""
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "prettier": "^3.3.2",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "pnpm@8.15.9"
+}
