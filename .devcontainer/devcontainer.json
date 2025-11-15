@@ -30,7 +30,8 @@
                 "ms-python.vscode-pylance",
                 "ms-toolsai.jupyter",
                 "ms-vscode.vscode-typescript-next",
-                "esbenp.prettier-vscode"
+                "esbenp.prettier-vscode",
+                "ms-vscode.pdf"
             ]
         }
     },

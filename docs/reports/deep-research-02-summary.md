@@ -4,6 +4,11 @@
 - **Outputs:**
   - [The Model Context Protocol (MCP)_ Deep-Dive Analysis.docx](./The%20Model%20Context%20Protocol%20(MCP)_%20Deep-Dive%20Analysis.docx)
   - [The Model Context Protocol (MCP)_ Deep-Dive Analysis.pdf](./The%20Model%20Context%20Protocol%20(MCP)_%20Deep-Dive%20Analysis.pdf)
+  - [IRI-The Model Context Protocol (MCP)_ Deep-Dive Analysis.md](./IRI-The%20Model%20Context%20Protocol%20(MCP)_%20Deep-Dive%20Analysis.md)
+  - [IRI-The Model Context Protocol (MCP)_ Deep-Dive Analysis.tex](./IRI-The%20Model%20Context%20Protocol%20(MCP)_%20Deep-Dive%20Analysis.tex)
+  - [IRI-The Model Context Protocol (MCP)_ Deep-Dive Analysis.pdf](./IRI-The%20Model%20Context%20Protocol%20(MCP)_%20Deep-Dive%20Analysis.pdf)
+> Conversion note: pandoc/xelatex warned about missing glyphs for full-width brackets when generating the PDF; consider adding a CJK-capable font if these characters reappear.
+
 - **Research date:** 2025-11-15
 - **Researcher:** Chris Page
 - **LLM configuration:** GPT-5.1 Thinking (multi-step research plan)

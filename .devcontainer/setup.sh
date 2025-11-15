@@ -16,6 +16,12 @@ if ! command -v pnpm >/dev/null 2>&1; then
     fi
 fi
 
+# Provision document conversion toolchain for Pandoc/XeLaTeX exports.
+if ! command -v pandoc >/dev/null 2>&1; then
+    sudo apt-get update
+    sudo apt-get install -y pandoc texlive-latex-recommended texlive-latex-extra texlive-xetex texlive-lang-cjk
+fi
+
 # Synchronize Python dependencies into a local .venv managed by uv.
 if [ -f "pyproject.toml" ]; then
     uv sync

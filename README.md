@@ -5,7 +5,7 @@ This repository captures the evolution of the Model Context Protocol (MCP) speci
 ## Getting Started
 
 1. **Open in Dev Container (Recommended)**
-   - Install the Dev Containers extension and reopen this folder in the container. The startup script installs uv, configures `pnpm`, syncs Python dependencies into `.venv`, and installs Node dev dependencies.
+   - Install the Dev Containers extension and reopen this folder in the container. The startup script installs uv, configures `pnpm`, syncs Python dependencies into `.venv`, installs Node dev dependencies, and provisions Pandoc/XeLaTeX (including `texlive-lang-cjk`) for document exports.
 2. **Local setup (optional)**
    - Install Python 3.11+, uv, Node.js 20+, and pnpm 8+.
    - Run `uv sync` to create `.venv` and install Python tooling.
@@ -38,6 +38,7 @@ Place source `.docx` files under `docs/reports/`. Include a companion Markdown s
 - Key conclusions or insights.
 
 Use the prompt template in `docs/templates/prompt-template.md` to track inputs that generated the research artifacts.
+Automate Markdown, LaTeX, and PDF regeneration with `uv run scripts/python/docx_export.py docs/reports/source.docx --pdf`; outputs land alongside the DOCX and adopt the `IRI-` prefix.
 
 ## Tracking the Upstream MCP Specification
 
