@@ -20,7 +20,7 @@ This repository captures the evolution of the Model Context Protocol (MCP) speci
   - `prompts/` — Prompts that generated research or reports.
   - `research/` — Raw notes, interview transcripts, and sourced material.
   - `reports/` — Published deliverables, including Word documents (`.docx`).
-  - `implementations/` — Case studies of good and bad MCP implementations.
+  - `implementations/` — Case studies of good and bad MCP implementations (see `good/govuk-mcp/` for the GovUK server fork).
   - `spec/` — Specification change logs, annotated readings, and cross references.
   - `alternatives/` — Technologies that compete with or complement MCP.
   - `templates/` — Templates for prompts, reports, and change logs.

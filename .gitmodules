@@ -1,3 +1,7 @@
 [submodule "external/mcp-spec"]
 	path = external/mcp-spec
 	url = https://github.com/modelcontextprotocol/modelcontextprotocol
+[submodule "external/govuk-mcp"]
+	path = external/govuk-mcp
+	url = https://github.com/chris-page-gov/GovUK-MCP.git
+	branch = crpage

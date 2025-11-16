@@ -11,6 +11,10 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Bec
 - Documentation updates covering the export helper, glyph warning handling, and regenerated artefact links in `README.md`, `docs/reports/README.md`, and `docs/reports/deep-research-02-summary.md`.
 - Dev container bootstrap now provisions Pandoc, the XeLaTeX toolchain (including `texlive-lang-cjk`), and installs the `ms-vscode.pdf` extension for in-editor PDF previews.
 - Expanded `.github/copilot-instructions.md` with guidance on conversion workflows, tooling expectations, and communication norms for future contributors.
+- Added GovUK MCP fork as `external/govuk-mcp` submodule with accompanying case-study docs under `docs/implementations/good/govuk-mcp/`.
+
+### Changed
+- GovUK MCP case study: submodule branch `crpage` now enforces per-tool rate limiting via `ToolRegistry.register`, with documentation and assessment updated accordingly.
 
 ### Notes
 - XeLaTeX still emits missing glyph warnings for full-width brackets when the necessary fonts are absent; installing `texlive-lang-cjk` resolves the issue during container setup.

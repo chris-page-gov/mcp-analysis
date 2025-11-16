@@ -4,6 +4,7 @@
 - Documentation-first repo tracking MCP specification history, research, and tooling.
 - Python automation managed by uv; TypeScript utilities managed by pnpm.
 - Devcontainer provisions Python 3.11, Node 20, uv, pnpm, and the Pandoc/XeLaTeX toolchain (pandoc, texlive-latex-* packages, texlive-lang-cjk) plus the VS Code PDF viewer (`ms-vscode.pdf`).
+- Example MCP implementation tracked as submodule under `external/govuk-mcp`, with evaluation notes in `docs/implementations/good/govuk-mcp/`.
 
 ## Critical Workflows
 - Run Python scripts with `uv run` (e.g., `uv run scripts/python/fetch_mcp_spec.py`).
